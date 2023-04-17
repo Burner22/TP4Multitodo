@@ -31,8 +31,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(){
-        String usuario = binding.user.getText()+"";
-        String password = binding.password.getText()+"";
+        String usuario = "eze";
+        //binding.user.getText()+"";
+        String password = "41710461";
+                //binding.password.getText()+"";
 
         if((usuario == "eze") && (password == "41710461")){
             Intent intent = new Intent(this, MenuActivity.class);
