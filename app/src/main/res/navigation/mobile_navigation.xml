@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.lospibescompany.tp4incompleto.ui.home.HomeFragment"
+        android:name="com.lospibescompany.tp4incompleto.ui.ubicacion.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_ubicacion" />
 
     <fragment
         android:id="@+id/nav_gallery"

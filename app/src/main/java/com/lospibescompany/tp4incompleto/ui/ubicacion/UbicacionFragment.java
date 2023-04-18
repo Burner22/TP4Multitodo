@@ -1,4 +1,4 @@
-package com.lospibescompany.tp4incompleto.ui.home;
+package com.lospibescompany.tp4incompleto.ui.ubicacion;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,21 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.lospibescompany.tp4incompleto.databinding.FragmentHomeBinding;
+import com.lospibescompany.tp4incompleto.databinding.FragmentUbicacionBinding;
 
-public class HomeFragment extends Fragment {
+public class UbicacionFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentUbicacionBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        UbicacionViewModel homeViewModel =
+                new ViewModelProvider(this).get(UbicacionViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentUbicacionBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
+        final TextView textView = binding.textUbicacion;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
